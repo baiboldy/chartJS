@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Charting from './components/Chart'
+import Bar from './components/Bar/Bar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Bar type={'horizontalBar'} leftBgColor={24} centerBgColor={144} rightBgColor={0} />
+      <hr />
+      <Bar type={'bar'} leftBgColor={244} centerBgColor={255} rightBgColor={11} />
+      <hr />
+      <Charting />
     </div>
   );
 }
